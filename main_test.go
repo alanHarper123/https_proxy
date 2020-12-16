@@ -1,9 +1,9 @@
 package main
 import "github.com/alanHarper123/https_proxy/string"
-import "fmt"
+import "testing"
 func Test(t *testing.T) {
-  if string.Reverse("12345")!="54312"{
-    fmt.Println("gg")
+  if string.Reverse("12345")!="54321"{
+    t.Error("gg")
   }
 
 }
